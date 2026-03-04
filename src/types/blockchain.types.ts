@@ -11,3 +11,17 @@ export interface BlockchainStats {
 }
 
 
+
+
+export interface SimpleTxResponse {
+  data: {
+    [txHash: string]: {
+      transaction: {
+        hash: string;
+        fee: number;
+        input_total: number;
+        output_total: number;
+      };
+    };
+  };
+}

@@ -1,6 +1,6 @@
 
 
-export const FetchStats = async( chain: 'bitcoin' | 'ethereum') => {
+export const FetchStats = async( chain: string) => {
 
     const response = await fetch(`https://api.blockchair.com/${chain}/stats`);
 
