@@ -14,7 +14,7 @@ export const Header = () => {
                     Crypto Explorer
                 </Link>
 
-                <nav className="flex items-center gap-2" aria-label="Navegación principal">
+                <nav className="flex items-center gap-2" aria-label="Main navigation">
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
@@ -38,7 +38,7 @@ export const Header = () => {
                             }`
                         }
                     >
-                        Buscar
+                        Hash Explorer
                     </NavLink>
                 </nav>
             </div>

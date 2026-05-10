@@ -25,8 +25,8 @@ export const UseBlockchainStats = () => {
                 setData(response);
                 
                 
-            } catch (err : any) {
-                setError(err.message);
+            } catch (err: unknown) {
+                setError(err instanceof Error ? err.message : "Could not load statistics");
                 
             }finally{
                 setLoading(false);

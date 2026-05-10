@@ -4,7 +4,7 @@ export const FetchStats = async( chain: string) => {
 
     const response = await fetch(`https://api.blockchair.com/${chain}/stats`);
 
-    if(!response.ok) throw new Error('algo salio mal');
+    if(!response.ok) throw new Error('Could not load statistics');
      
     const data = await response.json();
 

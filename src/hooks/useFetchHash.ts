@@ -16,7 +16,7 @@ export const FetchHash = () => {
         const consultApi = async () =>  {
             try {
                 if (!inputHash.trim()) {
-                    setError("Ingresa un hash para buscar.");
+                    setError("Enter a hash to search.");
                     return;
                 }
 
@@ -24,7 +24,7 @@ export const FetchHash = () => {
                 setError(null);
 
                 const request = await fetch(`https://api.blockchair.com/bitcoin/dashboards/transaction/${inputHash}`)
-                if(!request.ok) throw new Error('algo salio mal con la consulta');
+                if(!request.ok) throw new Error('Something went wrong with the request');
                 const requestJson : SimpleTxResponse = await request.json();
                 setData(requestJson);
                 HandleInputHash("");
@@ -34,7 +34,7 @@ export const FetchHash = () => {
                 if(err instanceof Error){
                     setError(err.message);
                 }else {
-                    setError('algo salio mal');
+                    setError('Something went wrong');
                 }
                 
 

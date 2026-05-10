@@ -12,7 +12,7 @@ export const Hashinfo = ({ data }: HashInfoProps) => {
     if (!txData) {
         return (
             <div className="rounded-lg border border-slate-700 bg-slate-800/60 px-4 py-5 text-sm text-slate-300">
-                No se encontró información de la transacción.
+                No transaction information was found.
             </div>
         );
     }
@@ -21,7 +21,7 @@ export const Hashinfo = ({ data }: HashInfoProps) => {
         <section className="rounded-xl border border-slate-700/60 bg-slate-900/70 p-6 shadow-lg shadow-slate-950/30 backdrop-blur sm:p-8">
             <div className="mb-6 border-b border-slate-700/70 pb-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">Bitcoin Transaction</p>
-                <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-100 sm:text-2xl">Detalle de transacción</h2>
+                <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-100 sm:text-2xl">Transaction Details</h2>
             </div>
 
             <div className="space-y-3">
