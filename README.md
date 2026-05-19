@@ -17,7 +17,7 @@
 ## 🔗 Live Demo
 
 > **🌐 Try the live application here:**  
-> [**[YOUR_LIVE_DEMO_LINK_HERE]**](#) *(Replace this link with your Vercel, Netlify, or GitHub Pages URL)*
+> [**cryptoexplorer.ronaldmode123.workers.dev**](https://cryptoexplorer.ronaldmode123.workers.dev/)
 
 ---
 
